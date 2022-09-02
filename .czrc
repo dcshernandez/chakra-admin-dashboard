@@ -1,0 +1,64 @@
+{
+  "path": "commitizen-emoji",
+  "config": {
+    "commitizenEmoji": {
+      "replaceTypes": true,
+      "conventionalFormat": true,
+      "skipQuestions": ["scope", "body", "breakingBody", "issues", "title"],
+      "questions": {
+        "type": "Select the type of change you're committing:",
+        "subject": "Write a short description of the change:"
+      },
+      "types": [
+         {
+           "emoji": "✨",
+           "code": ":sparkles:",
+           "description": "A new feature",
+           "name": "feat"
+         },
+         {
+          "emoji": "🐛",
+          "code": ":bug:",
+          "description": "A bug fix",
+          "name": "fix"
+        },
+        {
+          "emoji": "📝",
+          "code": ":memo:",
+          "description": "Add or update documentation",
+          "name": "docs"
+        },
+        {
+          "emoji": "💄",
+          "code": ":lipstick:",
+          "description": "Add or update styles, ui or ux",
+          "name": "styles"
+        },
+        {
+          "emoji": "🔨",
+          "code": ":hammer:",
+          "description": "A code change that neither fixes a bug nor adds a feature",
+          "name": "refactor"
+        },
+        {
+          "emoji": "⚡️",
+          "code": ":zap:",
+          "description": "Other changes",
+          "name": "misc"
+        },
+        {
+          "emoji": "⏪",
+          "code": ":rewind:",
+          "description": "Revert a previous commits",
+          "name": "revert"
+        },
+        {
+          "emoji": "🚧",
+          "code": ":construction:",
+          "description": "Work in progress",
+          "name": "wip"
+        }
+      ]
+    }
+  }
+}

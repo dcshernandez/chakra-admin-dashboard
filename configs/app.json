@@ -1,0 +1,12 @@
+{
+  "name": "Admin Dashboard",
+  "title": "Admin Dashboard | React + Chakra UI",
+  "brand": {
+    "label": "Admin Dashboard",
+    "image":{
+      "src": null
+    }
+  },
+  "privacy-policy-url": "",
+  "terms-of-service-url": ""
+}

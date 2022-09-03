@@ -21,9 +21,11 @@ const SidebarItem: React.FC<ISidebarItemProps> = ({ label, path, icon }) => (
     my={4}
     as={NavLink}
     to={path}
+    sx={{
+      transition: 'all 300ms ease',
+    }}
     _activeLink={{
       bg: useColorModeValue('gray.100', 'gray.900'),
-      fontWeight: 'semibold',
       color: useColorModeValue('gray.900', 'gray.100'),
       marginLeft: '1rem',
       borderLeftRadius: 'lg',

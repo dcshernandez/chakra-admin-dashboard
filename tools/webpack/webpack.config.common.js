@@ -19,6 +19,7 @@ module.exports = () => ({
       api: resolvePath('./src/api'),
       assets: resolvePath('./src/assets'),
       router: resolvePath('./src/router'),
+      helpers: resolvePath('./src/helpers')
     },
     extensions: ['.tsx', '.ts', '.js'],
   },

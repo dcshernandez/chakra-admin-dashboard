@@ -4,7 +4,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
-import '@fontsource/rubik'
+import '@fontsource/lato'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,

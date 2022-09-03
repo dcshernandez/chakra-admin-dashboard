@@ -14,6 +14,7 @@ export const profile = {
   lastName: 'Hernandez',
   imgUrl: 'https://github.com/dcshernandez.png',
   username: 'dcshernandez',
+  fullName: 'Diane Hernandez',
 }
 
 export default topbarLinks

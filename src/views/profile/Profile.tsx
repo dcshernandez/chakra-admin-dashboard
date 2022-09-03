@@ -1,8 +1,6 @@
-import Sidebar from 'components/sidebar'
-
 const Profile = () => (
   <div>
-    <Sidebar />
+    <h2>Profile</h2>
   </div>
 )
 

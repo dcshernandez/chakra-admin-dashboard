@@ -3,6 +3,7 @@ import {
   CreditCard,
   FileText,
   PieChart,
+  TrendingUp,
 } from 'react-feather'
 
 const sidebarItems = [
@@ -12,14 +13,19 @@ const sidebarItems = [
     icon: PieChart,
   },
   {
-    name: 'Transactions',
-    path: '/transactions',
+    name: 'My Wallet',
+    path: '/my-wallet',
     icon: CreditCard,
   },
   {
-    name: 'Bills',
-    path: '/bills',
+    name: 'Transactions',
+    path: '/transactions',
     icon: FileText,
+  },
+  {
+    name: 'Investments',
+    path: '/investments',
+    icon: TrendingUp,
   },
   {
     name: 'Reports',

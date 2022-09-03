@@ -4,9 +4,7 @@ const global = {
   'html, body, *': {
     margin: 0,
     padding: 0,
-  },
-  body: {
-    transition: 'all 500ms ease-in',
+    letterSpacing: '1.3px',
   },
 }
 
@@ -16,7 +14,8 @@ const config: ThemeConfig = {
 }
 
 const fonts = {
-  body: '\'Rubik\', sans-serif',
+  body: '\'Lato\', sans-serif',
+  weight: 'bold',
 }
 
 const colors = {
@@ -31,6 +30,9 @@ const colors = {
     700: '#1c1f3e',
     800: '#161831',
     900: '#121324',
+  },
+  brand: {
+    gold: '#D4AF37',
   },
 }
 
@@ -80,7 +82,7 @@ const components = {
 }
 
 const theme = extendTheme({
-  global,
+  styles: { global },
   config,
   fonts,
   colors,

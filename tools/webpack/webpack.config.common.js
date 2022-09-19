@@ -8,6 +8,9 @@ const resolvePath = (dir) => path.join(__dirname, '../../', dir);
 module.exports = () => ({
   target: ['web', 'es5'],
   entry: './src/index.tsx',
+  output: {
+    publicPath: '/',
+  },
   resolve: {
     alias: {
       components: resolvePath('./src/components'),

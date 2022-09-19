@@ -1,9 +1,9 @@
-## Admin Dashboard
+## Chakra Admin Dashboard
 ----
 ### Figma Design:  [Admin Dashboard by @DraxAtelier](https://www.figma.com/community/file/1056097702656084248)
-### Built using
+### Built with: 
 **React v18**  
-**React Router Dom v6**
+**React Router Dom v6**  
 **Chakra UI**  
 **webpack**  
 **TypeScript**  

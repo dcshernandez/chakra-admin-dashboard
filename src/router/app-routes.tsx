@@ -26,6 +26,14 @@ export const privateRoutes = [
     path: '/reports',
     element: <h1>Reports</h1>,
   },
+  {
+    path: '/my-wallet',
+    element: <h1>My Wallet</h1>,
+  },
+  {
+    path: '/investments',
+    element: <h1>Investments</h1>,
+  },
 ]
 
 export const publicRoutes = [

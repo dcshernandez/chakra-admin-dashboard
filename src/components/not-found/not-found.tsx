@@ -4,12 +4,15 @@ import {
 
 const NotFound = () => (
   <Flex
-    bg="#edf3f8"
     p={50}
     h="full"
     w="full"
     alignItems="center"
     justifyContent="center"
+    bg="white"
+    _dark={{
+      bg: 'gray.800',
+    }}
   >
     <Flex
       justify="center"
@@ -52,7 +55,7 @@ const NotFound = () => (
             sm: 'row',
           }}
           spacing={2}
-          mt={2}
+          mt={8}
         >
           <Box ml={3} display="inline-flex" rounded="md" shadow="md">
             <Link
@@ -65,8 +68,12 @@ const NotFound = () => (
               border="solid transparent"
               fontWeight="bold"
               rounded="md"
-              color="brand.primaryText"
-              bg="brand.primary"
+              bg="white"
+              color="gray.600"
+              _dark={{
+                bg: 'gray.900',
+                color: 'white',
+              }}
               _hover={{
                 bg: 'brand.50',
               }}

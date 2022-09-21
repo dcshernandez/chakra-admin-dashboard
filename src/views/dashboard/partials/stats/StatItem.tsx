@@ -2,6 +2,8 @@ import {
   Box,
   Stat, StatArrow, StatHelpText, StatLabel, StatNumber, Text, useColorModeValue,
 } from '@chakra-ui/react'
+import ReactApexChart from 'react-apexcharts'
+import { options, series } from './chart-mock'
 
 type TStatItemProps = {
   label?: string
@@ -17,8 +19,14 @@ const StatItem: React.FC<TStatItemProps> = (props) => {
   } = props
 
   return (
-    <Box bg={bgColor} p={4} borderRadius="lg">
-      <Stat>
+    <Box
+      bg={bgColor}
+      h={32}
+      w="calc(100% / 3)"
+      borderRadius="lg"
+      position="relative"
+    >
+      <Stat p={4}>
         <StatLabel>{label}</StatLabel>
         <StatNumber>{statNumber}</StatNumber>
         <StatHelpText mt={2} display="flex" alignItems="center" flexDirection="row">
@@ -31,6 +39,18 @@ const StatItem: React.FC<TStatItemProps> = (props) => {
           </Text>
         </StatHelpText>
       </Stat>
+      <ReactApexChart
+        style={{
+          position: 'absolute',
+          bottom: 0,
+          right: 0,
+        }}
+        type="area"
+        options={options}
+        series={series}
+        height="80"
+        width="70%"
+      />
     </Box>
   )
 }

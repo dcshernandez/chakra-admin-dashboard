@@ -12,7 +12,7 @@ const Panel: React.FC<TPanelProps> = (props) => {
   return (
     <Flex p={4} bg={bgColor} borderRadius="xl" direction="column">
       {
-        header && <Box p={4}>{header}</Box>
+        header && <Box p={2}>{header}</Box>
       }
       <Box>{children}</Box>
     </Flex>
